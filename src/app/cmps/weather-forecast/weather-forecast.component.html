@@ -1,0 +1,14 @@
+<section class="card-grid" >
+    <div *ngFor="let Daily of weather.DailyForecasts" class="daily-forecast">
+        <h4>{{Daily.Date | date}}</h4>
+        <h4>Day</h4>
+        <img src="../../../assets/img/icons/{{Daily.Day.Icon}}.png" alt="{{Daily.Day.Icon}}">
+        <!-- <img src="../../../assets/img/icons/01-s.png" alt="img"> -->
+        <h4>{{Daily.Day.IconPhrase}}</h4>
+        <h4>Night</h4>
+        <img src="../../../assets/img/icons/{{Daily.Night.Icon}}.png" alt="{{Daily.Night.Icon}}">
+        <!-- <img src="../../../assets/img/icons/01-s.png" alt="img"> -->
+        <h4>{{Daily.Night.IconPhrase}}</h4>
+        <h4><span>{{ Daily.Temperature.Minimum.Value}}</span>-{{ Daily.Temperature.Maximum.Value}} C</h4>
+    </div>
+</section>

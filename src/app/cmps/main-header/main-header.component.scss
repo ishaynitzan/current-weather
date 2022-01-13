@@ -1,0 +1,41 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    color: #ffffff;
+    background-color: #044369;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h4{
+            margin: 0%;
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 200px;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 0.5rem;
+        }
+
+        .active {
+            background-color: #04507f;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+    }
+
+    img {
+        width: 40px;
+        margin: 0.5rem;
+        transform: rotateZ(180deg);
+    }
+}

@@ -1,0 +1,8 @@
+<section class="home-page">
+    <h3>Welcome to<br>Current-Weather</h3>
+    <h4>We will help you to be ready for any weather!</h4>
+
+    <input  [(ngModel)]="inputSearch" (ngModelChange)="this.inputSearchUpdate.next($event)" name="search"  type="search" placeholder="Search">
+
+    <weather-forecast [weather]="weather$ |async" class="weather-forecast"></weather-forecast>
+</section>
